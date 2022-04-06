@@ -8,11 +8,7 @@ export const useAuthStatus = () => {
   const { user } = useSelector(state => state.auth)
 
   useEffect(() => {
-    if (user) {
-      setLoggedIn(true)
-    } else {
-      setLoggedIn(false)
-    }
+    user ? setLoggedIn(true) : setLoggedIn(false)
     setCheckingStatus(false)
   }, [user])
 
