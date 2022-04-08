@@ -69,7 +69,8 @@ const NewTicket = () => {
               id='product'
               value={product}
               onChange={e => setProduct(e.target.value)}>
-              <option value='Xbox 360'>Xbox 360</option>
+              <option value='product'>Please choose a product</option>
+              <option value='Xbox360'>Xbox360</option>
               <option value='Nintendo Game Boy'>Nintendo Game Boy</option>
               <option value='PS3'>PS3</option>
               <option value='Sega Genesis'>Sega Genesis</option>
